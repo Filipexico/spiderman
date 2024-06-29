@@ -1,0 +1,36 @@
+.header {
+    &__container {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: -85px;
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: 768px) {
+            justify-content: flex-start;
+            padding-top: .5em;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 10px;
+        }
+    }
+
+    .button {
+        height: auto;
+        width: 100%;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
+    }
+}

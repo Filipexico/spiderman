@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style/main.css">
     <title>SPIDERMAN 3</title>
-    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="header">
+        <div class="header__container">
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button">Cadastrar</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__background"></div>
+            <div class="hero__content">
+                <h2 class="title--big">SPIDERMAN 3</h2>
+                <p class="text--big">Um estranho simbionte alienígena se une a roupa do Homem-Aranha e traz os demônios mais sombrios de Peter Parker à tona. Enquanto Homem-Areia, Venom e o novo Duende Verde planejam se vingar do Homem-Aranha, Peter batalha contra ele mesmo.</p>
+                <button class="button">Assistir agora</button>
+            </div>
+    </section>
+    <section class="synopsis">
+        <div class="synopsis__content">
+            <h2 class="title">Sinopse</h2>
+            <p class="text--big">MPeter Parker conseguiu finalmente juntar as partes quebradas da sua vida, mantendo um equilíbrio entre a sua relação com Mary-Jane e a sua responsabilidade como Homem-Aranha. Mas surgem mais desafios para o nosso jovem herói. O velho amigo de Peter, Harry Obsourne, decidiu vingar-se de Peter, assumindo o manto da personalidade do seu falecido pai como O Novo Duende, e Peter tem também de capturar o verdadeiro assassino do tio Ben, Flint Marko, que se transformou no seu inimigo mais duro, o Sandman. Toda a esperança parece perdida quando, de repente, o fato de Peter se torna negro e amplifica os seus poderes. Mas também começa a amplificar as qualidades mais sombrias da personalidade de Peter, que começa a perder-se. Peter tem de ir ao fundo de si próprio para libertar o herói compassivo que costumava ser, se quiser vencer a escuridão interior e enfrentar não só os seus maiores inimigos, mas também... ele próprio.</p>
+        </div>
+        <div class="synopsis__image">
+            <img src="dist/image/cena4.jpg" alt="Transformação homem aranha">
+        </div>
+    </section>
+    <section class="characters">
+        <div class="characters__bg">
+            <h2 class="title">Conheça os personagens</h2>
+            <nav class="characters__tab">
+                <button data-tab-button="toby_maguire" class="characters__tab__button characters__tab__button--is--active">
+                    Peter Parker
+                </button>
+                <button data-tab-button="Mary_Jane_Watson" class="characters__tab__button">
+                    Mary Jane Watson
+                </button>
+            </nav>
+            <div data-tab-id="toby_maguire" class="characters__content characters__content--is--active">
+            <img src="dist/image/Tobey_Maguire_2014.jpg" alt="Toby Maguire">
+                <p class="text--big">
+                    Peter Parker : Whatever comes our way, whatever battle we have raging inside us, we always have a choice. My friend Harry taught me that. He chose to be the best of himself. It's the choices that make us who we are, and we can always choose to do what's right.                </p>
+            </div>
+            <div data-tab-id="Mary_Jane_Watson" class="characters__content">
+                <img src="dist/image/Kirsten_Dunst_Cannes_2016.jpg" alt="Michael Burry">
+                <p class="text--big">
+                    An investigative journalist for the Daily Bugle, Mary Jane Watson is a friend and love interest of Peter Parker, aware of his dual life as Spider-Man. She has been friends with Peter Parker and Harry Osborn since middle school. Before the events of Marvel's Spider-Man, she and Peter dated, but their relationship ended due to his overprotectiveness. As a journalist, she delves deep into New York City's mysteries, often risking her own safety to uncover significant stories. Despite her daring journalistic pursuits occasionally clashing with Peter's concerns, they ultimately collaborated as partners.                </p>
+            </div>
+        </div>
+    </section>
+    <section class="available_devices">
+        <h2 class="title">Assista aonde quiser</h2>
+        <ul class="available_devices__list">
+            <li class="available_devices__item">
+                <h4 class="title--small">Computador</h4>
+                <img src="dist/image/monitor_3474360.png" alt="Computador">
+                <ul class="text--big">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>
+            </li>
+            <li class="available_devices__item">
+                <h4 class="title--small">Celular</h4>
+                <img src="dist/image/smartphone-call_15874.png" alt="Celular">
+                <ul class="text--big">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Android</li>
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+            <li class="available_devices__item">
+                <h4 class="title--small">Televisão</h4>
+                <img src="dist/image/television.png" alt="Televisão">
+                <ul class="text--big">
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                </ul>
+            </li>
+        </ul>
+        <p></p>
+    </section>
+    <section class="faq">
+        <h2 class="title">Curiosidades</h2>
+        <ul class="faq_questions">       
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__questions" data-faq-question>
+                    ERROS DE GRAVAÇÃO
+                </div>
+                <div class="faq__questions__item__answer text">
+                    <p>Whenever Spider-Man removes his mask, his costume (both red and black versions) has a turtleneck collar that goes up to the middle of his neck. Whenever his costume is shown underneath his clothes, the collar is much lower.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__questions" data-faq-question>
+                    CITAÇÕES
+                </div>
+                <div class="faq__questions__item__answer text">
+                    <p>Peter Parker: Whatever comes our way, whatever battle we have raging inside us, we always have a choice. My friend Harry taught me that. He chose to be the best of himself. It's the choices that make us who we are, and we can always choose to do what's right.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__questions" data-faq-question>
+                    CENAS DURANTE OU PÓS-CRÉDITOS
+                </div>
+                <div class="faq__questions__item__answer text">
+                    <p>The opening credits appear stuck on a series of webs, which display scenes of events of the previous two films. The symbiote crawls around briefly during part of the opening credits.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__questions" data-faq-question>
+                    VERSÕES ALTERNATIVAS
+                </div>
+                <div class="faq__questions__item__answer text">
+                    <p>In 2017, in anticipation for Spider-Man: Homecoming, Sony released an "Editor's Cut" of Spider-Man 3. This cut mostly utilizes an unused score, alternate edits of scenes, a restructured story, and scenes both added and removed throughout. With all of these changes, this version runs 2 minutes shorter than the theatrical version.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__questions" data-faq-question>
+                    CONEXÕES
+                </div>
+                <div class="faq__questions__item__answer text">
+                    <p>Edited from Homem-Aranha (2002)</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/image/logo.png" alt="spiderman">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">
+                        Dispositivos compatíveis
+                    </a>
+                </li>
+            
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,93 @@
+@use 'hero';
+@use 'synopsis';
+@use 'characters';
+@use 'available_devices';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
+@font-face {
+    font-family: Saira Condensed;
+    src: url(../../assets/fonts/SairaCondensed-Regular.ttf);
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: Saira Condensed;
+    src: url(../../assets/fonts/SairaCondensed-Bold.ttf);
+    font-weight: 700;
+}
+
+$corTextoPrincipal: #ffffff;
+$corTextoSecundaria:#fff;
+$corTituloPrincipal: #ffffff;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Saira Condensed;
+    font-weight: bold;
+    list-style: none;
+}
+
+body {
+    background-color:#013f88;
+}
+
+@mixin text($font-size: 16px) {
+    font-size: $font-size;
+    line-height: $font-size + 10px;
+    color: $corTextoPrincipal;
+}
+
+@mixin title($fontsize: 40px) {
+    @include text($fontsize);
+    color: $corTituloPrincipal;
+}
+
+.text--big {
+    @include text(20px);
+    font-weight: normal
+}
+
+.text {
+    @include text();
+}
+
+.text--small {
+    @include text(14px);
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title();
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.button {
+    display: block;
+    width: 30%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: normal;
+    color: $corTextoSecundaria;
+    background-color: #fd0000;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    margin-top: 2vw;
+    transition: all ease .4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(#c42828, 10%);
+    }
+}

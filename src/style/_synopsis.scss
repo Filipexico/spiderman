@@ -1,0 +1,46 @@
+.synopsis {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    @media (min-width:769px) and (max-width: 1024px) {
+        display: block;
+    }
+
+    &__content {
+        max-width: 60%;
+        background-color: #fd0000;
+        max-width: 100%;
+        padding: 50px 25px;
+        border-radius: 12px;
+        margin: auto 0 ;
+
+        @media (max-width: 768px) {
+            padding: 15px 15px;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: .5em;
+        }
+
+        p {
+            color: #ffffff;
+        }
+    }
+
+    &__image {
+        margin: auto 0;
+        img {
+            max-width: 100%;
+            padding: 25px;
+        }
+    }
+}
